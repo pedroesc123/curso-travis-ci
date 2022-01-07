@@ -9,6 +9,13 @@ git:
   depth: 3
 script:
   - yarn build
+notificactions:
+  email:
+    recipients:
+      - frontendleader@gmail.com
+      - devops@gmail.com
+    on_success: always
+    on_failure: always
 deploy:
   provider: pages
   skip_cleanup: true
